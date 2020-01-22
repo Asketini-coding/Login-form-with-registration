@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Made by Asketini  -->
+</head>
+<body>
+    
+    <div class="login-page">
+
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="Username"> 
+                <input type="text" placeholder="Password"> 
+                <input type="text" placeholder="Email"> 
+                <button>Create</button>
+                <p class="message">Aready Registered? <a href="#">Login</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button>Login</button>
+                <p class="message">Not Registered? <a href="#">Register</a></p>
+            </form>
+        </div>
+
+    </div>
+
+    <h1>Made by Asketini: <a href="https://github.com/Asketini-coding/Login-form-with-registration.git">Github</a></h1>
+   
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow")
+    });
+
+    </script>
+</body>
+</html>
